@@ -1,0 +1,1327 @@
+[
+  {
+    "input": "what is an apk",
+    "output": "APK stands for Android Package Kit — it's the file format used to install apps on Android. Like a .exe on Windows but for Android. You can install APKs from outside the Play Store too!",
+    "tag": "android"
+  },
+  {
+    "input": "what is apk file",
+    "output": "An APK (Android Package Kit) is a compressed archive containing an Android app's code, resources, and manifest. Android uses it to install apps.",
+    "tag": "android"
+  },
+  {
+    "input": "how to install apk",
+    "output": "1. Enable 'Install from unknown sources' in Settings → Security.\n2. Download the APK file.\n3. Tap it in your file manager.\n4. Tap Install. Done!",
+    "tag": "android"
+  },
+  {
+    "input": "what is android",
+    "output": "Android is a mobile operating system developed by Google, based on Linux. It powers over 70% of smartphones worldwide. Apps are built in Java/Kotlin.",
+    "tag": "android"
+  },
+  {
+    "input": "what is termux",
+    "output": "Termux is a terminal emulator for Android that gives you a full Linux environment. You can run Python, Node.js, Git, and much more — no root needed!",
+    "tag": "android"
+  },
+  {
+    "input": "what is kotlin",
+    "output": "Kotlin is the official programming language for Android development. It's modern, concise, and fully interoperable with Java. Recommended by Google since 2017.",
+    "tag": "android"
+  },
+  {
+    "input": "what is android studio",
+    "output": "Android Studio is the official IDE for Android development. Built on IntelliJ IDEA, it includes a code editor, emulator, debugger, and build tools.",
+    "tag": "android"
+  },
+  {
+    "input": "what is gradle",
+    "output": "Gradle is the build system used in Android projects. It compiles your code, packages resources, and creates the final APK file.",
+    "tag": "android"
+  },
+  {
+    "input": "what is adb",
+    "output": "ADB (Android Debug Bridge) is a command-line tool for communicating with Android devices. Used to install APKs, debug apps, and access the device shell.",
+    "tag": "android"
+  },
+  {
+    "input": "what is the play store",
+    "output": "Google Play Store is Android's official app marketplace with over 3 million apps. Apps are reviewed by Google before being published.",
+    "tag": "android"
+  },
+  {
+    "input": "what is a fragment in android",
+    "output": "A Fragment is a reusable UI component in Android. Like a mini-Activity. Multiple fragments can exist in one activity, great for tablets and navigation.",
+    "tag": "android"
+  },
+  {
+    "input": "what is an activity in android",
+    "output": "An Activity is a single screen in an Android app. Every screen you see is an Activity. Apps have multiple activities linked together.",
+    "tag": "android"
+  },
+  {
+    "input": "what is intent in android",
+    "output": "An Intent is a messaging object used to request an action in Android — like opening a new Activity, sharing content, or launching the camera.",
+    "tag": "android"
+  },
+  {
+    "input": "what is mvvm",
+    "output": "MVVM (Model-View-ViewModel) is an Android architecture pattern. Model = data, View = UI, ViewModel = logic bridge. Keeps code clean and testable.",
+    "tag": "android"
+  },
+  {
+    "input": "what is jetpack compose",
+    "output": "Jetpack Compose is Android's modern UI toolkit. Instead of XML layouts, you write UI in Kotlin code declaratively — similar to React or Flutter.",
+    "tag": "android"
+  },
+  {
+    "input": "what is flutter",
+    "output": "Flutter is Google's UI toolkit for building cross-platform apps (Android, iOS, Web) from a single Dart codebase. Known for beautiful, fast UIs.",
+    "tag": "android"
+  },
+  {
+    "input": "what is react native",
+    "output": "React Native lets you build Android and iOS apps using JavaScript and React. Write once, run on both platforms with near-native performance.",
+    "tag": "android"
+  },
+  {
+    "input": "make an awesome html code",
+    "output": "Here's a stunning animated landing page:\n\n<!DOCTYPE html>\n<html>\n<head>\n<style>\n* { margin:0; padding:0; box-sizing:border-box; }\nbody { background:#0a0a0f; color:#fff; font-family:sans-serif;\n  display:flex; align-items:center; justify-content:center; height:100vh; }\n.card { background:linear-gradient(135deg,#1a1a2e,#16213e);\n  border:1px solid rgba(255,255,255,.1); border-radius:20px;\n  padding:40px; text-align:center; animation:fadeIn 1s ease; }\nh1 { font-size:2.5rem; background:linear-gradient(90deg,#7c6aff,#a78bfa);\n  -webkit-background-clip:text; -webkit-text-fill-color:transparent; }\np { color:rgba(255,255,255,.6); margin-top:10px; }\n@keyframes fadeIn { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:none} }\n</style>\n</head>\n<body>\n<div class='card'>\n  <h1>Hello World ✨</h1>\n  <p>Built with pure HTML & CSS</p>\n</div>\n</body>\n</html>",
+    "tag": "code"
+  },
+  {
+    "input": "write html code",
+    "output": "<!DOCTYPE html>\n<html lang='en'>\n<head>\n  <meta charset='UTF-8'>\n  <meta name='viewport' content='width=device-width, initial-scale=1.0'>\n  <title>My Page</title>\n  <style>\n    body { font-family: sans-serif; background: #f0f0f0; }\n    h1 { color: #333; }\n  </style>\n</head>\n<body>\n  <h1>Hello World!</h1>\n  <p>This is my web page.</p>\n</body>\n</html>",
+    "tag": "code"
+  },
+  {
+    "input": "write a python function",
+    "output": "def greet(name, greeting='Hello'):\n    '''\n    Returns a greeting message.\n    Args:\n        name: str - person's name\n        greeting: str - type of greeting\n    Returns:\n        str - formatted greeting\n    '''\n    return f'{greeting}, {name}! Welcome aboard 🎉'\n\n# Usage:\nprint(greet('Hriday'))           # Hello, Hriday!\nprint(greet('Hriday', 'Hey'))   # Hey, Hriday!",
+    "tag": "code"
+  },
+  {
+    "input": "write a python class",
+    "output": "class Animal:\n    def __init__(self, name, species):\n        self.name    = name\n        self.species = species\n        self.alive   = True\n\n    def speak(self):\n        return f'{self.name} makes a sound'\n\n    def __repr__(self):\n        return f'Animal({self.name!r}, {self.species!r})'\n\nclass Dog(Animal):\n    def speak(self):\n        return f'{self.name} says: Woof! 🐶'\n\ndog = Dog('Rex', 'Canis lupus')\nprint(dog.speak())  # Rex says: Woof!",
+    "tag": "code"
+  },
+  {
+    "input": "write a javascript function",
+    "output": "// Arrow function with default params\nconst greet = (name, emoji = '👋') => {\n    return `Hello, ${name}! ${emoji}`;\n};\n\n// Async function example\nasync function fetchData(url) {\n    try {\n        const res  = await fetch(url);\n        const data = await res.json();\n        return data;\n    } catch (err) {\n        console.error('Error:', err);\n        return null;\n    }\n}\n\nconsole.log(greet('Hriday'));  // Hello, Hriday! 👋",
+    "tag": "code"
+  },
+  {
+    "input": "write a css animation",
+    "output": "@keyframes pulse {\n    0%, 100% { transform: scale(1);   opacity: 1; }\n    50%       { transform: scale(1.1); opacity: 0.8; }\n}\n\n@keyframes slideIn {\n    from { transform: translateX(-100%); opacity: 0; }\n    to   { transform: translateX(0);     opacity: 1; }\n}\n\n@keyframes spin {\n    to { transform: rotate(360deg); }\n}\n\n.pulsing  { animation: pulse   1s ease-in-out infinite; }\n.sliding  { animation: slideIn 0.5s ease forwards; }\n.spinning { animation: spin    1s linear infinite; }",
+    "tag": "code"
+  },
+  {
+    "input": "make a todo app python",
+    "output": "todos = []\n\ndef add(task):    todos.append({'task': task, 'done': False})\ndef complete(i):  todos[i]['done'] = True\ndef delete(i):    todos.pop(i)\ndef show():\n    for i, t in enumerate(todos):\n        status = '✅' if t['done'] else '⬜'\n        print(f'{i}. {status} {t[\"task\"]}')\n\n# Example usage:\nadd('Build AI app')\nadd('Learn Python')\ncomplete(0)\nshow()\n# 0. ✅ Build AI app\n# 1. ⬜ Learn Python",
+    "tag": "code"
+  },
+  {
+    "input": "write a flask api",
+    "output": "from flask import Flask, jsonify, request\napp = Flask(__name__)\n\nitems = []\n\n@app.route('/items', methods=['GET'])\ndef get_items():\n    return jsonify(items)\n\n@app.route('/items', methods=['POST'])\ndef add_item():\n    data = request.get_json()\n    items.append(data)\n    return jsonify(data), 201\n\n@app.route('/items/<int:i>', methods=['DELETE'])\ndef delete_item(i):\n    items.pop(i)\n    return jsonify({'ok': True})\n\nif __name__ == '__main__':\n    app.run(debug=True)",
+    "tag": "code"
+  },
+  {
+    "input": "make a countdown timer python",
+    "output": "import time\n\ndef countdown(seconds):\n    print(f'⏱ Starting {seconds}s countdown...')\n    for i in range(seconds, 0, -1):\n        print(f'  {i}...', end='\\r')\n        time.sleep(1)\n    print('🔔 Time is up!         ')\n\ncountdown(10)",
+    "tag": "code"
+  },
+  {
+    "input": "write a password generator",
+    "output": "import random, string\n\ndef generate_password(length=16, symbols=True):\n    chars = string.ascii_letters + string.digits\n    if symbols:\n        chars += '!@#$%^&*'\n    password = [\n        random.choice(string.ascii_uppercase),\n        random.choice(string.ascii_lowercase),\n        random.choice(string.digits),\n    ]\n    password += [random.choice(chars) for _ in range(length - 3)]\n    random.shuffle(password)\n    return ''.join(password)\n\nprint(generate_password(16))   # e.g. Xk9#mP2$vL8nQr4!",
+    "tag": "code"
+  },
+  {
+    "input": "make a dark mode toggle css",
+    "output": "/* CSS Variables approach */\n:root {\n    --bg:   #ffffff;\n    --text: #111111;\n    --card: #f5f5f5;\n}\nbody.dark {\n    --bg:   #0a0a0f;\n    --text: #e4e4f0;\n    --card: #0e0e14;\n}\nbody {\n    background: var(--bg);\n    color:      var(--text);\n    transition: background 0.3s, color 0.3s;\n}\n\n/* Toggle button JS */\ndocument.getElementById('toggle').addEventListener('click', () => {\n    document.body.classList.toggle('dark');\n});",
+    "tag": "code"
+  },
+  {
+    "input": "write a simple game python",
+    "output": "import random\n\nprint('🎮 Number Guessing Game')\nsecret = random.randint(1, 100)\nattempts = 0\n\nwhile True:\n    try:\n        guess = int(input('Guess (1-100): '))\n        attempts += 1\n        if guess < secret:\n            print('📉 Too low!')\n        elif guess > secret:\n            print('📈 Too high!')\n        else:\n            print(f'🎉 Correct! You got it in {attempts} attempts!')\n            break\n    except ValueError:\n        print('Please enter a valid number.')",
+    "tag": "code"
+  },
+  {
+    "input": "write a web scraper",
+    "output": "import requests, re\n\ndef scrape(url):\n    headers = {'User-Agent': 'Mozilla/5.0'}\n    res     = requests.get(url, headers=headers, timeout=5)\n    # Extract page title\n    title = re.search(r'<title>(.*?)</title>', res.text, re.I)\n    # Extract all links\n    links = re.findall(r'href=[\"\\']([^\"\\'>]+)[\"\\']', res.text)\n    return {\n        'title': title.group(1) if title else 'No title',\n        'links': links[:10],\n        'status': res.status_code\n    }\n\ndata = scrape('https://example.com')\nprint(data['title'])\nprint(data['links'])",
+    "tag": "code"
+  },
+  {
+    "input": "make a chatbot python",
+    "output": "responses = {\n    'hello':      'Hi there! 👋',\n    'how are you':'I am doing great!',\n    'bye':        'Goodbye! 👋',\n    'help':       'I can answer questions. Try asking me something!',\n}\n\nprint('🤖 ChatBot ready! Type \"bye\" to exit.')\nwhile True:\n    user = input('You: ').lower().strip()\n    if user == 'bye':\n        print('Bot: Goodbye!')\n        break\n    reply = responses.get(user, \"I don't know that yet!\")\n    print(f'Bot: {reply}')",
+    "tag": "code"
+  },
+  {
+    "input": "what is typescript",
+    "output": "TypeScript is JavaScript with static types. Catches errors at compile time instead of runtime. Used in large projects — Angular, Next.js, and more.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is nodejs",
+    "output": "Node.js lets JavaScript run on servers. Built on Chrome's V8 engine, it's fast and non-blocking. Great for APIs, real-time apps, and CLI tools.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is react",
+    "output": "React is a JavaScript library by Meta for building UIs. Uses components and a virtual DOM for fast updates. Powers Facebook, Instagram, and thousands of apps.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is docker",
+    "output": "Docker packages apps into containers — isolated environments with everything they need. 'Works on my machine' problems disappear!",
+    "tag": "tech"
+  },
+  {
+    "input": "what is kubernetes",
+    "output": "Kubernetes (K8s) is a system for automating deployment and scaling of containerized apps. The industry standard for managing Docker containers at scale.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is devops",
+    "output": "DevOps combines development and operations. It's about automating software delivery with CI/CD pipelines, monitoring, and infrastructure as code.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is cloud computing",
+    "output": "Cloud computing delivers computing services (servers, storage, AI) over the internet. Major providers: AWS, Google Cloud, Azure.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is open source",
+    "output": "Open source means the source code is publicly available for anyone to view, modify, and distribute. Examples: Linux, Python, Firefox, VS Code.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is github",
+    "output": "GitHub is a platform to host Git repositories, collaborate on code, track issues, and run CI/CD pipelines. Over 100 million developers use it.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is vscode",
+    "output": "VS Code is a free, open-source code editor by Microsoft. Extremely popular with thousands of extensions for every language and framework.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is linux",
+    "output": "Linux is a free, open-source OS kernel created by Linus Torvalds in 1991. Powers servers, Android, supercomputers, and developer machines worldwide.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is encryption",
+    "output": "Encryption converts data into unreadable ciphertext using a key. Only the correct key decrypts it. Protects passwords, messages, and bank transactions.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is blockchain",
+    "output": "Blockchain is a distributed ledger where data is stored in linked blocks. Decentralized, transparent, and tamper-resistant. Powers Bitcoin and Ethereum.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is graphql",
+    "output": "GraphQL is an API query language by Meta. Unlike REST, clients request exactly the data they need — no over-fetching or under-fetching.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is websocket",
+    "output": "WebSocket enables real-time two-way communication between client and server. Used in chat apps, live notifications, and multiplayer games.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is cors",
+    "output": "CORS (Cross-Origin Resource Sharing) is a browser security feature that controls which domains can access your API. Flask-CORS handles it in Python.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is sql",
+    "output": "SQL (Structured Query Language) manages relational databases. Key commands: SELECT, INSERT, UPDATE, DELETE. Example: SELECT * FROM users WHERE age > 18.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is nosql",
+    "output": "NoSQL databases store data without fixed schemas — flexible documents (MongoDB), key-value pairs (Redis), or graphs (Neo4j). Great for scaling.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is redis",
+    "output": "Redis is an in-memory key-value store — extremely fast. Used for caching, sessions, real-time leaderboards, and message queues.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is an ide",
+    "output": "IDE (Integrated Development Environment) is a tool for writing, running, and debugging code. Examples: VS Code, PyCharm, Android Studio, Spck Editor.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is spck editor",
+    "output": "Spck Editor is a code editor for Android that supports HTML, CSS, JavaScript, and Python. Great for coding on your phone!",
+    "tag": "tech"
+  },
+  {
+    "input": "what is firebase",
+    "output": "Firebase is Google's backend platform. Offers real-time database, authentication, cloud storage, and hosting. Great for Android and web apps.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is rest api",
+    "output": "REST API uses HTTP methods: GET (read), POST (create), PUT (update), DELETE (remove). Returns JSON. The most common way apps communicate.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is json",
+    "output": "JSON (JavaScript Object Notation) is a lightweight data format: {\"name\": \"Alex\", \"age\": 25}. Used everywhere for APIs, configs, and storage.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is recursion",
+    "output": "Recursion is when a function calls itself. Needs a base case to stop. Example: factorial(5) = 5 × factorial(4) = 5 × 4 × 3 × 2 × 1 = 120.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is big o notation",
+    "output": "Big O describes algorithm efficiency. O(1) = instant, O(n) = linear, O(n²) = slow, O(log n) = fast search. Used to compare algorithm performance.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is an algorithm",
+    "output": "An algorithm is a step-by-step procedure to solve a problem. Like a recipe. Famous ones: Binary Search, Quicksort, Dijkstra's pathfinding.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is object oriented programming",
+    "output": "OOP organizes code into objects (instances of classes). 4 pillars: Encapsulation, Inheritance, Polymorphism, Abstraction. Used in Python, Java, Kotlin.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is functional programming",
+    "output": "Functional programming treats computation as evaluating functions — no shared state, no side effects. Python supports it with map(), filter(), lambda.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is the largest country in the world",
+    "output": "Russia is the largest country by area — 17.1 million km², covering 11% of Earth's land. It spans 11 time zones!",
+    "tag": "general"
+  },
+  {
+    "input": "what is the smallest country in the world",
+    "output": "Vatican City is the smallest country — only 0.44 km² inside Rome, Italy. Home to the Pope and about 800 citizens.",
+    "tag": "general"
+  },
+  {
+    "input": "what is the most spoken language",
+    "output": "Mandarin Chinese has the most native speakers (~1 billion). English is the most widely spoken overall including second-language speakers.",
+    "tag": "general"
+  },
+  {
+    "input": "how many countries are in the world",
+    "output": "There are 195 countries in the world — 193 UN member states plus Vatican City and Palestine as observer states.",
+    "tag": "general"
+  },
+  {
+    "input": "what is the tallest mountain",
+    "output": "Mount Everest at 8,849 m (29,032 ft) above sea level. Located in the Himalayas on the Nepal-Tibet border.",
+    "tag": "general"
+  },
+  {
+    "input": "what is the deepest ocean",
+    "output": "The Pacific Ocean is the deepest and largest. The Mariana Trench (11,034 m) is the deepest point on Earth — deeper than Everest is tall!",
+    "tag": "general"
+  },
+  {
+    "input": "what is the longest river",
+    "output": "The Nile (6,650 km) is traditionally considered the longest, though some studies suggest the Amazon. The Amazon has the greatest water flow.",
+    "tag": "general"
+  },
+  {
+    "input": "what is the largest ocean",
+    "output": "The Pacific Ocean is the largest — covering about 165 million km², more than all land combined. It holds over half of Earth's water.",
+    "tag": "general"
+  },
+  {
+    "input": "how many continents are there",
+    "output": "7 continents: Africa, Antarctica, Asia, Australia/Oceania, Europe, North America, South America. Asia is the largest and most populated.",
+    "tag": "general"
+  },
+  {
+    "input": "what is the capital of india",
+    "output": "New Delhi is the capital of India. Mumbai is the largest city. India is the world's most populous country with 1.4 billion people.",
+    "tag": "general"
+  },
+  {
+    "input": "what is the capital of usa",
+    "output": "Washington D.C. is the capital of the United States. New York City is the largest city. The US has 50 states.",
+    "tag": "general"
+  },
+  {
+    "input": "what is the capital of japan",
+    "output": "Tokyo is the capital of Japan — also the world's most populous metropolitan area with ~37 million people.",
+    "tag": "general"
+  },
+  {
+    "input": "what is the capital of china",
+    "output": "Beijing is the capital of China. Shanghai is the largest city. China has the second largest economy in the world.",
+    "tag": "general"
+  },
+  {
+    "input": "what is the internet made of",
+    "output": "The internet is made of physical infrastructure — undersea fiber optic cables, routers, data centers, and satellites — connected by protocols like TCP/IP.",
+    "tag": "general"
+  },
+  {
+    "input": "how many bones in the human body",
+    "output": "Adults have 206 bones. Babies are born with ~270 — many fuse together as we grow. The femur (thigh bone) is the longest.",
+    "tag": "general"
+  },
+  {
+    "input": "how much of the earth is water",
+    "output": "About 71% of Earth's surface is water. Of all water, 97% is saltwater in oceans. Only 3% is fresh water, and most of that is frozen in glaciers.",
+    "tag": "general"
+  },
+  {
+    "input": "what is the population of the world",
+    "output": "The world population is approximately 8.1 billion people (2024). Asia is home to about 60% of the global population.",
+    "tag": "general"
+  },
+  {
+    "input": "what is the hottest place on earth",
+    "output": "Death Valley, California holds the record — 56.7°C (134°F) in 1913. The hottest average temperatures are in the Danakil Depression, Ethiopia.",
+    "tag": "general"
+  },
+  {
+    "input": "what is the coldest place on earth",
+    "output": "Antarctica holds the record at -89.2°C (-128.6°F) recorded at Vostok Station in 1983. It's also the driest and windiest continent.",
+    "tag": "general"
+  },
+  {
+    "input": "what is the amazon rainforest",
+    "output": "The Amazon is the world's largest tropical rainforest covering 5.5 million km² across 9 countries, mainly Brazil. It produces 20% of Earth's oxygen.",
+    "tag": "general"
+  },
+  {
+    "input": "what is the great wall of china",
+    "output": "The Great Wall of China is a series of walls built over centuries, stretching ~21,196 km. Built to protect against invasions. A UNESCO World Heritage Site.",
+    "tag": "general"
+  },
+  {
+    "input": "what causes rainbows",
+    "output": "Rainbows form when sunlight passes through water droplets. Light refracts, reflects inside the droplet, and refracts again — splitting into 7 colors.",
+    "tag": "general"
+  },
+  {
+    "input": "why is the sky blue",
+    "output": "Earth's atmosphere scatters sunlight. Blue light has a shorter wavelength and scatters more than other colors, making the sky appear blue.",
+    "tag": "general"
+  },
+  {
+    "input": "what is a tsunami",
+    "output": "A tsunami is a series of ocean waves caused by underwater earthquakes, volcanic eruptions, or landslides. Waves can reach 30+ meters high.",
+    "tag": "general"
+  },
+  {
+    "input": "what is the highest grossing movie",
+    "output": "Avatar (2009, re-released 2022) by James Cameron holds the record at $2.9 billion worldwide. Avengers: Endgame is second at $2.8 billion.",
+    "tag": "entertainment"
+  },
+  {
+    "input": "who is the best selling music artist",
+    "output": "The Beatles are considered the best-selling music artists of all time with over 600 million records sold. Michael Jackson follows with ~350 million.",
+    "tag": "entertainment"
+  },
+  {
+    "input": "what is the grammy award",
+    "output": "The Grammy Awards are the highest honor in the music industry, presented by the Recording Academy. Named after the gramophone. First awarded in 1959.",
+    "tag": "entertainment"
+  },
+  {
+    "input": "what is netflix",
+    "output": "Netflix is a streaming platform with 260+ million subscribers worldwide. Started as a DVD rental service in 1997, launched streaming in 2007.",
+    "tag": "entertainment"
+  },
+  {
+    "input": "what is the oscars",
+    "output": "The Academy Awards (Oscars) are the most prestigious film awards. Held annually since 1929. The Oscar statuette is 34 cm tall and gold-plated.",
+    "tag": "entertainment"
+  },
+  {
+    "input": "who created the simpsons",
+    "output": "The Simpsons was created by Matt Groening, premiering on Fox in 1989. It's the longest-running American animated series and primetime scripted TV series.",
+    "tag": "entertainment"
+  },
+  {
+    "input": "what is spotify",
+    "output": "Spotify is the world's largest music streaming platform with 600+ million users and 100+ million songs. Founded in Sweden in 2006.",
+    "tag": "entertainment"
+  },
+  {
+    "input": "what is youtube",
+    "output": "YouTube is the world's largest video platform with 2.7 billion users. Founded in 2005, acquired by Google in 2006. 500 hours of video uploaded every minute.",
+    "tag": "entertainment"
+  },
+  {
+    "input": "who is michael jackson",
+    "output": "Michael Jackson (1958-2009) was the King of Pop — one of the best-selling artists ever. Thriller (1982) is the best-selling album of all time.",
+    "tag": "entertainment"
+  },
+  {
+    "input": "what is hip hop",
+    "output": "Hip hop is a cultural movement born in the Bronx, NYC in the 1970s. It includes rapping (MCing), DJing, breakdancing, and graffiti art.",
+    "tag": "entertainment"
+  },
+  {
+    "input": "what is the dark knight",
+    "output": "The Dark Knight (2008) directed by Christopher Nolan is widely considered the greatest superhero film. Heath Ledger won a posthumous Oscar for the Joker.",
+    "tag": "entertainment"
+  },
+  {
+    "input": "what is marvel",
+    "output": "Marvel Studios creates the Marvel Cinematic Universe (MCU) — the highest-grossing film franchise ever with $29+ billion. Started with Iron Man in 2008.",
+    "tag": "entertainment"
+  },
+  {
+    "input": "who created minecraft",
+    "output": "Minecraft was created by Markus 'Notch' Persson in 2009, developed by Mojang. Microsoft bought Mojang for $2.5 billion in 2014. Best-selling game ever!",
+    "tag": "entertainment"
+  },
+  {
+    "input": "what is anime",
+    "output": "Anime is Japanese animated content with distinctive art styles. Popular worldwide — examples: Dragon Ball, Naruto, Attack on Titan, One Piece, Demon Slayer.",
+    "tag": "entertainment"
+  },
+  {
+    "input": "who is beethoven",
+    "output": "Ludwig van Beethoven (1770-1827) was a German composer. He composed nine symphonies, including the famous 5th and 9th, while profoundly deaf.",
+    "tag": "entertainment"
+  },
+  {
+    "input": "what is a documentary",
+    "output": "A documentary is a non-fiction film presenting factual information about real events, people, or topics. Examples: Planet Earth, Free Solo, The Social Dilemma.",
+    "tag": "entertainment"
+  },
+  {
+    "input": "who was napoleon",
+    "output": "Napoleon Bonaparte (1769-1821) was a French military leader who became Emperor of France. He conquered much of Europe but was exiled after defeat at Waterloo.",
+    "tag": "history"
+  },
+  {
+    "input": "what was world war 1",
+    "output": "WWI (1914-1918) started with Archduke Franz Ferdinand's assassination. The Allied Powers defeated the Central Powers. 20 million died, reshaping Europe.",
+    "tag": "history"
+  },
+  {
+    "input": "what was world war 2",
+    "output": "WWII (1939-1945) was the deadliest conflict in history — 70-85 million deaths. Allied Powers defeated Nazi Germany and Imperial Japan. Led to the UN's creation.",
+    "tag": "history"
+  },
+  {
+    "input": "who was einstein",
+    "output": "Albert Einstein (1879-1955) was a German-born physicist who developed the theory of relativity (E=mc²). Won the Nobel Prize in 1921. Considered the greatest scientist of the 20th century.",
+    "tag": "history"
+  },
+  {
+    "input": "what is the french revolution",
+    "output": "The French Revolution (1789-1799) overthrew the monarchy, established a republic, and gave birth to ideals of liberty, equality, and fraternity. Led to Napoleon's rise.",
+    "tag": "history"
+  },
+  {
+    "input": "who was cleopatra",
+    "output": "Cleopatra VII (69-30 BC) was the last pharaoh of ancient Egypt. Famous for her relationships with Julius Caesar and Mark Antony. She was a scholar who spoke 9 languages.",
+    "tag": "history"
+  },
+  {
+    "input": "what is the roman empire",
+    "output": "The Roman Empire (27 BC - 476 AD) was one of history's largest empires. At its peak it covered 5 million km² from Britain to Mesopotamia. Latin became the foundation of European languages.",
+    "tag": "history"
+  },
+  {
+    "input": "who invented the telephone",
+    "output": "Alexander Graham Bell is credited with inventing the telephone in 1876. Though Elisha Gray filed a patent the same day, Bell is officially recognized.",
+    "tag": "history"
+  },
+  {
+    "input": "who invented the light bulb",
+    "output": "Thomas Edison developed the first practical incandescent light bulb in 1879. He also invented the phonograph and held over 1,000 patents.",
+    "tag": "history"
+  },
+  {
+    "input": "what is the cold war",
+    "output": "The Cold War (1947-1991) was a geopolitical tension between the USA and USSR without direct military conflict. Led to the space race, nuclear arms race, and fall of the Berlin Wall.",
+    "tag": "history"
+  },
+  {
+    "input": "what is the silk road",
+    "output": "The Silk Road was an ancient network of trade routes connecting China to Europe (2nd century BC - 15th century AD). Traded silk, spices, gold, and ideas.",
+    "tag": "history"
+  },
+  {
+    "input": "who was gandhi",
+    "output": "Mahatma Gandhi (1869-1948) led India's independence movement from British rule through nonviolent civil disobedience. Inspired civil rights movements worldwide.",
+    "tag": "history"
+  },
+  {
+    "input": "what is the renaissance",
+    "output": "The Renaissance (14th-17th century) was a cultural rebirth in Europe. It revived Greek/Roman learning, producing Da Vinci, Michelangelo, Shakespeare, and Copernicus.",
+    "tag": "history"
+  },
+  {
+    "input": "who was leonardo da vinci",
+    "output": "Leonardo da Vinci (1452-1519) was an Italian Renaissance genius — painter (Mona Lisa, Last Supper), sculptor, architect, scientist, and inventor. The ultimate polymath.",
+    "tag": "history"
+  },
+  {
+    "input": "what is the magna carta",
+    "output": "The Magna Carta (1215) was a document signed by King John of England limiting royal power. It established that everyone, including the king, is subject to law.",
+    "tag": "history"
+  },
+  {
+    "input": "who was julius caesar",
+    "output": "Julius Caesar (100-44 BC) was a Roman general and statesman who conquered Gaul and became dictator of Rome. He was assassinated on the Ides of March (March 15).",
+    "tag": "history"
+  },
+  {
+    "input": "what is ancient egypt",
+    "output": "Ancient Egypt (3100-30 BC) was one of the world's greatest civilizations, known for pyramids, pharaohs, hieroglyphics, and the Nile River. Lasted over 3,000 years.",
+    "tag": "history"
+  },
+  {
+    "input": "what is the berlin wall",
+    "output": "The Berlin Wall divided East and West Berlin from 1961-1989. It symbolized the Iron Curtain of the Cold War. Its fall on November 9, 1989 marked the end of the Cold War.",
+    "tag": "history"
+  },
+  {
+    "input": "how many planets are in the solar system",
+    "output": "8 planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune. Pluto was reclassified as a dwarf planet in 2006.",
+    "tag": "space"
+  },
+  {
+    "input": "what is the sun",
+    "output": "The Sun is a G-type star at the center of our solar system. 1.39 million km in diameter — 109 Earths wide. Surface temperature: ~5,500°C. Age: 4.6 billion years.",
+    "tag": "space"
+  },
+  {
+    "input": "what is the milky way",
+    "output": "The Milky Way is our galaxy — a barred spiral galaxy containing 100-400 billion stars. It's 100,000 light years across. Our solar system is in the Orion Arm.",
+    "tag": "space"
+  },
+  {
+    "input": "how far is the moon from earth",
+    "output": "The Moon averages 384,400 km from Earth. It takes light 1.3 seconds to travel that distance. Apollo 11 took 3 days to get there in 1969.",
+    "tag": "space"
+  },
+  {
+    "input": "what is a galaxy",
+    "output": "A galaxy is a massive system of stars, gas, dust, and dark matter held together by gravity. There are an estimated 2 trillion galaxies in the observable universe!",
+    "tag": "space"
+  },
+  {
+    "input": "what is a nebula",
+    "output": "A nebula is a giant cloud of gas and dust in space. They're the birthplaces of stars. The Orion Nebula is visible to the naked eye and is 1,344 light years away.",
+    "tag": "space"
+  },
+  {
+    "input": "what is a supernova",
+    "output": "A supernova is a massive stellar explosion — the most powerful event in the universe. It happens when a star runs out of fuel. Can briefly outshine entire galaxies!",
+    "tag": "space"
+  },
+  {
+    "input": "what is the international space station",
+    "output": "The ISS orbits Earth at 400 km altitude, traveling at 28,000 km/h. A joint project of NASA, Roscosmos, ESA, JAXA, and CSA. Continuously crewed since 2000.",
+    "tag": "space"
+  },
+  {
+    "input": "who was the first person in space",
+    "output": "Yuri Gagarin (USSR) was the first human in space on April 12, 1961, orbiting Earth once in 108 minutes aboard Vostok 1.",
+    "tag": "space"
+  },
+  {
+    "input": "who was the first person on the moon",
+    "output": "Neil Armstrong became the first person to walk on the Moon on July 20, 1969 (Apollo 11). His famous words: 'That's one small step for man, one giant leap for mankind.'",
+    "tag": "space"
+  },
+  {
+    "input": "what is a comet",
+    "output": "A comet is a small icy body that orbits the Sun. When near the Sun, it develops a glowing coma and tail of gas and dust. Halley's Comet visits every 75 years.",
+    "tag": "space"
+  },
+  {
+    "input": "what is an asteroid",
+    "output": "Asteroids are rocky bodies orbiting the Sun, mostly in the asteroid belt between Mars and Jupiter. The largest is Ceres (940 km wide), now classified as a dwarf planet.",
+    "tag": "space"
+  },
+  {
+    "input": "what is dark matter",
+    "output": "Dark matter is invisible matter that doesn't emit or absorb light. It makes up ~27% of the universe. We can detect it through its gravitational effects on visible matter.",
+    "tag": "space"
+  },
+  {
+    "input": "what is a light year",
+    "output": "A light year is the distance light travels in one year — about 9.46 trillion km. The nearest star (Proxima Centauri) is 4.24 light years away.",
+    "tag": "space"
+  },
+  {
+    "input": "what is spacex",
+    "output": "SpaceX was founded by Elon Musk in 2002. It revolutionized spaceflight with reusable rockets (Falcon 9), Starlink satellites, and the Dragon spacecraft for ISS missions.",
+    "tag": "space"
+  },
+  {
+    "input": "what is nasa",
+    "output": "NASA (National Aeronautics and Space Administration) is the US space agency, founded in 1958. Led the Apollo moon missions, launched Hubble, and operates the Mars rovers.",
+    "tag": "space"
+  },
+  {
+    "input": "what is the hubble telescope",
+    "output": "The Hubble Space Telescope was launched in 1990 and orbits 547 km above Earth. It has captured breathtaking images of nebulae, galaxies, and deep space.",
+    "tag": "space"
+  },
+  {
+    "input": "is there life on mars",
+    "output": "No confirmed life on Mars yet. But Mars had liquid water billions of years ago. NASA's rovers found organic molecules and methane. The search continues!",
+    "tag": "space"
+  },
+  {
+    "input": "what is a shooting star",
+    "output": "A shooting star is a meteoroid — a small rock from space — burning up in Earth's atmosphere. The friction creates a streak of light. Most are the size of a grain of sand!",
+    "tag": "space"
+  },
+  {
+    "input": "how old is the universe",
+    "output": "The universe is approximately 13.8 billion years old, based on measurements of the cosmic microwave background radiation by the Planck spacecraft.",
+    "tag": "space"
+  },
+  {
+    "input": "what is the james webb telescope",
+    "output": "The James Webb Space Telescope launched in 2021 is the most powerful ever built. It can see 13.6 billion light years away and images the first galaxies formed after the Big Bang.",
+    "tag": "space"
+  },
+  {
+    "input": "what is a virus",
+    "output": "A virus is a microscopic infectious agent that replicates inside living cells. Unlike bacteria, viruses are not alive on their own. Examples: flu, COVID-19, HIV.",
+    "tag": "science"
+  },
+  {
+    "input": "what is a bacteria",
+    "output": "Bacteria are single-celled microorganisms found everywhere on Earth. Most are harmless or beneficial — your gut has trillions! Some cause diseases like TB and strep throat.",
+    "tag": "science"
+  },
+  {
+    "input": "what is the human genome",
+    "output": "The human genome is the complete set of DNA in a human cell — about 3 billion base pairs containing ~20,000 genes. The Human Genome Project mapped it completely by 2003.",
+    "tag": "science"
+  },
+  {
+    "input": "what is climate change",
+    "output": "Climate change refers to long-term shifts in global temperatures caused by greenhouse gases (CO₂, methane) from burning fossil fuels. It causes rising seas, extreme weather, and species loss.",
+    "tag": "science"
+  },
+  {
+    "input": "what is nuclear energy",
+    "output": "Nuclear energy is released by splitting atoms (fission) or fusing them (fusion). Nuclear plants produce 10% of global electricity with zero carbon emissions but radioactive waste.",
+    "tag": "science"
+  },
+  {
+    "input": "what is the periodic table",
+    "output": "The periodic table organizes 118 known elements by atomic number. Created by Dmitri Mendeleev in 1869. Elements in the same column share similar chemical properties.",
+    "tag": "science"
+  },
+  {
+    "input": "what is carbon",
+    "output": "Carbon is element 6 — the basis of all life. It forms millions of compounds including DNA, proteins, and plastics. Diamond and graphite are both pure carbon!",
+    "tag": "science"
+  },
+  {
+    "input": "what is oxygen",
+    "output": "Oxygen (element 8) makes up 21% of Earth's atmosphere. Essential for respiration. Most abundant element in Earth's crust. Discovered by Carl Wilhelm Scheele in 1772.",
+    "tag": "science"
+  },
+  {
+    "input": "what is the theory of relativity",
+    "output": "Einstein's Special Relativity: time slows and mass increases at high speeds; E=mc². General Relativity: gravity is the curvature of spacetime by mass.",
+    "tag": "science"
+  },
+  {
+    "input": "what is an ecosystem",
+    "output": "An ecosystem is a community of living organisms interacting with each other and their environment. Examples: rainforest, coral reef, desert, tundra.",
+    "tag": "science"
+  },
+  {
+    "input": "what is natural selection",
+    "output": "Natural selection is Darwin's mechanism of evolution — organisms with traits better suited to their environment survive and reproduce more, passing those traits on.",
+    "tag": "science"
+  },
+  {
+    "input": "what is a chemical bond",
+    "output": "A chemical bond is the force holding atoms together. Types: covalent (shared electrons), ionic (electron transfer), metallic (electron sea). Bonds form molecules.",
+    "tag": "science"
+  },
+  {
+    "input": "what is the human nervous system",
+    "output": "The nervous system is the body's communication network. Brain + spinal cord = central nervous system. Nerves extending throughout the body = peripheral nervous system.",
+    "tag": "science"
+  },
+  {
+    "input": "what is a hormone",
+    "output": "Hormones are chemical messengers produced by glands that regulate body functions. Examples: insulin (blood sugar), adrenaline (fight-or-flight), testosterone, estrogen.",
+    "tag": "science"
+  },
+  {
+    "input": "what causes seasons",
+    "output": "Seasons are caused by Earth's 23.5° axial tilt, not distance from the Sun. When your hemisphere tilts toward the Sun, it's summer. Away from it, it's winter.",
+    "tag": "science"
+  },
+  {
+    "input": "what is sound",
+    "output": "Sound is a mechanical wave — vibrations traveling through a medium (air, water, solid). It can't travel in a vacuum. Human hearing range: 20 Hz to 20,000 Hz.",
+    "tag": "science"
+  },
+  {
+    "input": "what is light",
+    "output": "Light is electromagnetic radiation visible to the human eye (380-700 nm wavelength). It behaves as both a wave and a particle (photon) — wave-particle duality.",
+    "tag": "science"
+  },
+  {
+    "input": "what is a magnet",
+    "output": "Magnets have north and south poles — opposites attract, like poles repel. Earth itself is a giant magnet. Electromagnetism is one of the four fundamental forces.",
+    "tag": "science"
+  },
+  {
+    "input": "what is the human digestive system",
+    "output": "The digestive system breaks down food into nutrients. Path: mouth → esophagus → stomach → small intestine → large intestine → rectum. Takes 24-72 hours.",
+    "tag": "science"
+  },
+  {
+    "input": "what is respiration",
+    "output": "Cellular respiration converts glucose + oxygen into ATP energy, CO₂, and water. Formula: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + ATP. Happens in mitochondria.",
+    "tag": "science"
+  },
+  {
+    "input": "what is algebra",
+    "output": "Algebra uses letters (variables) to represent unknown numbers in equations. Example: if 2x + 3 = 7, then x = 2. Foundation of all advanced mathematics.",
+    "tag": "math"
+  },
+  {
+    "input": "what is calculus",
+    "output": "Calculus studies change and motion. Differential calculus finds rates of change (derivatives). Integral calculus finds areas under curves. Invented by Newton and Leibniz.",
+    "tag": "math"
+  },
+  {
+    "input": "what is geometry",
+    "output": "Geometry studies shapes, sizes, and properties of figures. Covers points, lines, angles, triangles, circles, and 3D shapes. Euclid wrote the foundational textbook ~300 BC.",
+    "tag": "math"
+  },
+  {
+    "input": "what is statistics",
+    "output": "Statistics collects, analyzes, and interprets data. Key concepts: mean (average), median (middle), mode (most common), standard deviation (spread).",
+    "tag": "math"
+  },
+  {
+    "input": "what is a percentage",
+    "output": "A percentage is a number expressed as a fraction of 100. 50% = 50/100 = 0.5. To find 20% of 80: 80 × 0.20 = 16.",
+    "tag": "math"
+  },
+  {
+    "input": "what is a fraction",
+    "output": "A fraction represents parts of a whole: numerator/denominator. ¾ means 3 parts out of 4. To add fractions, use a common denominator.",
+    "tag": "math"
+  },
+  {
+    "input": "what is a square root",
+    "output": "A square root of a number n is a value that when multiplied by itself gives n. √16 = 4 because 4×4=16. √2 ≈ 1.414 is irrational.",
+    "tag": "math"
+  },
+  {
+    "input": "what is infinity",
+    "output": "Infinity (∞) is not a number but a concept — something without any bound or end. There are different sizes of infinity! Mathematician Georg Cantor proved this.",
+    "tag": "math"
+  },
+  {
+    "input": "what is a matrix",
+    "output": "A matrix is a rectangular array of numbers arranged in rows and columns. Used in linear algebra, computer graphics, machine learning, and physics.",
+    "tag": "math"
+  },
+  {
+    "input": "what is probability",
+    "output": "Probability measures how likely an event is — from 0 (impossible) to 1 (certain). P(event) = favorable outcomes / total outcomes. Flipping heads = 1/2 = 50%.",
+    "tag": "math"
+  },
+  {
+    "input": "what is a logarithm",
+    "output": "A logarithm is the inverse of exponentiation. log₁₀(1000) = 3 because 10³ = 1000. Natural log (ln) uses base e ≈ 2.718. Used in earthquake scales, sound levels.",
+    "tag": "math"
+  },
+  {
+    "input": "what is the golden ratio",
+    "output": "The golden ratio (φ ≈ 1.618) appears when a line is divided so the whole/larger part = larger/smaller part. Found in art, architecture, and nature (flower petals, shells).",
+    "tag": "math"
+  },
+  {
+    "input": "what is a programming language",
+    "output": "A programming language is a formal language for writing instructions a computer can execute. High-level (Python, JS) are human-readable. Low-level (Assembly) are closer to hardware.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is an operating system",
+    "output": "An OS manages hardware and software resources — memory, processes, files, I/O. Examples: Windows, macOS, Linux, Android, iOS. The kernel is its core.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is ram",
+    "output": "RAM (Random Access Memory) is short-term memory — stores data your computer is actively using. More RAM = better multitasking. Loses data when power is off.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is a cpu",
+    "output": "CPU (Central Processing Unit) is the brain of a computer — executes instructions billions of times per second (GHz). Modern CPUs have multiple cores.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is a gpu",
+    "output": "GPU (Graphics Processing Unit) handles parallel computations — originally for graphics, now essential for AI/ML training. NVIDIA and AMD make the top GPUs.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is ssd",
+    "output": "SSD (Solid State Drive) stores data on flash memory with no moving parts. Much faster than HDDs — boots OS in seconds. Used in modern laptops and phones.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is wifi",
+    "output": "WiFi is wireless networking technology using radio waves to connect devices to the internet. Standards: WiFi 4 (802.11n), WiFi 5 (ac), WiFi 6 (ax) — faster each generation.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is bluetooth",
+    "output": "Bluetooth is short-range wireless technology for connecting devices within ~10 meters. Used for headphones, keyboards, speakers. Named after Danish king Harald Bluetooth.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is a compiler",
+    "output": "A compiler translates source code into machine code before execution. C, C++, Rust use compilers. Fast execution but needs compilation step. Opposite of interpreter.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is an interpreter",
+    "output": "An interpreter executes code line by line at runtime. Python, JavaScript use interpreters. Easier to debug but slower than compiled code.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is binary code",
+    "output": "Binary uses only 0s and 1s — the language of computers. All data is stored as binary. 'A' = 01000001. 8 bits = 1 byte. 1024 bytes = 1 kilobyte.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is cybersecurity",
+    "output": "Cybersecurity protects computers, networks, and data from attacks. Includes encryption, firewalls, antivirus, and ethical hacking (penetration testing).",
+    "tag": "tech"
+  },
+  {
+    "input": "what is artificial general intelligence",
+    "output": "AGI is hypothetical AI with human-level intelligence across all domains. Current AI is narrow (specific tasks). AGI remains a future goal — experts debate when/if it will arrive.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is a large language model",
+    "output": "LLMs are AI models trained on massive text datasets to understand and generate human language. Examples: GPT-4, Claude, Gemini, LLaMA. They power modern chatbots.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is prompt engineering",
+    "output": "Prompt engineering is crafting inputs to AI models to get better outputs. Techniques: few-shot examples, chain-of-thought, role assignment, clear instructions.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is an ip address",
+    "output": "An IP address uniquely identifies a device on a network. IPv4: 192.168.1.1 (32-bit, ~4 billion addresses). IPv6: longer, 128-bit format for trillions of devices.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is a vpn",
+    "output": "VPN (Virtual Private Network) encrypts your internet traffic and hides your IP address. Used for privacy, accessing geo-blocked content, and secure remote work.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is an algorithm complexity",
+    "output": "Algorithm complexity measures efficiency. Time complexity: how long it takes. Space complexity: how much memory. Big O notation: O(1) constant, O(n) linear, O(n²) quadratic.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is version control",
+    "output": "Version control tracks changes to files over time. Git is the most popular — lets you revert, branch, and collaborate. GitHub/GitLab host repositories online.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is agile",
+    "output": "Agile is a software development methodology using short sprints (1-4 weeks), continuous feedback, and iterative development. Alternatives: Waterfall, Scrum, Kanban.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is a calorie",
+    "output": "A calorie is a unit of energy from food. Average adults need ~2000-2500 calories/day. 1g fat = 9 cal, 1g protein = 4 cal, 1g carbs = 4 cal.",
+    "tag": "health"
+  },
+  {
+    "input": "what is a balanced diet",
+    "output": "A balanced diet includes: vegetables, fruits, whole grains, lean protein, healthy fats, and dairy. Aim for colorful variety and limit processed food, sugar, and salt.",
+    "tag": "health"
+  },
+  {
+    "input": "how much water should i drink",
+    "output": "The common guideline is 8 glasses (2 liters) per day. But needs vary by size, activity, and climate. Your urine should be light yellow — that's a good hydration sign.",
+    "tag": "health"
+  },
+  {
+    "input": "what is bmi",
+    "output": "BMI (Body Mass Index) = weight(kg) / height(m)². Under 18.5: underweight. 18.5-24.9: normal. 25-29.9: overweight. 30+: obese. A rough health indicator.",
+    "tag": "health"
+  },
+  {
+    "input": "what vitamins do i need",
+    "output": "Key vitamins: A (vision), B complex (energy & nerves), C (immunity), D (bones, from sunlight), E (antioxidant), K (blood clotting). A varied diet covers most needs.",
+    "tag": "health"
+  },
+  {
+    "input": "what is meditation",
+    "output": "Meditation is a practice of focused attention to reduce stress and improve wellbeing. Even 10 minutes daily can lower cortisol, improve focus, and reduce anxiety.",
+    "tag": "health"
+  },
+  {
+    "input": "how much sleep do i need",
+    "output": "Adults need 7-9 hours per night. Teens need 8-10 hours. Sleep deprivation harms memory, immunity, and mood. Quality matters as much as quantity.",
+    "tag": "health"
+  },
+  {
+    "input": "what is exercise",
+    "output": "Exercise improves cardiovascular health, strength, mood, and longevity. WHO recommends 150 min moderate aerobic exercise per week plus strength training twice weekly.",
+    "tag": "health"
+  },
+  {
+    "input": "what is stress",
+    "output": "Stress is the body's response to demands or threats — releasing cortisol and adrenaline. Short-term stress can be helpful. Chronic stress harms heart, immunity, and mental health.",
+    "tag": "health"
+  },
+  {
+    "input": "what is mental health",
+    "output": "Mental health covers emotional, psychological, and social wellbeing. Conditions include anxiety, depression, ADHD. Treatment: therapy, medication, lifestyle changes.",
+    "tag": "health"
+  },
+  {
+    "input": "what is the immune system",
+    "output": "The immune system defends against pathogens. White blood cells, antibodies, lymph nodes work together. Vaccines train it to recognize specific threats.",
+    "tag": "health"
+  },
+  {
+    "input": "what is diabetes",
+    "output": "Diabetes is a condition where blood sugar is too high. Type 1: immune system destroys insulin-producing cells. Type 2: body becomes insulin resistant, often from lifestyle factors.",
+    "tag": "health"
+  },
+  {
+    "input": "what is caffeine",
+    "output": "Caffeine is a natural stimulant in coffee, tea, and energy drinks. It blocks adenosine (sleep signal) receptors, increasing alertness. Half-life ~5-6 hours.",
+    "tag": "health"
+  },
+  {
+    "input": "what are antioxidants",
+    "output": "Antioxidants neutralize free radicals — unstable molecules that damage cells. Found in berries, dark chocolate, green tea, and colorful vegetables. May reduce cancer risk.",
+    "tag": "health"
+  },
+  {
+    "input": "what is inflation",
+    "output": "Inflation is the rate at which prices rise over time, reducing purchasing power. Central banks target ~2% annual inflation. Caused by demand increases, supply shortages, or money printing.",
+    "tag": "business"
+  },
+  {
+    "input": "what is the stock market",
+    "output": "The stock market is where shares of public companies are bought and sold. Major indexes: S&P 500 (USA), NASDAQ (tech), Nikkei (Japan). Reflects economic confidence.",
+    "tag": "business"
+  },
+  {
+    "input": "what is cryptocurrency",
+    "output": "Cryptocurrency is digital currency using cryptography for security. Bitcoin (2009) was first. Others: Ethereum, Solana. Decentralized — no central bank controls it.",
+    "tag": "business"
+  },
+  {
+    "input": "what is bitcoin",
+    "output": "Bitcoin is the first and largest cryptocurrency, created in 2009 by the anonymous Satoshi Nakamoto. Limited to 21 million coins. Uses proof-of-work blockchain.",
+    "tag": "business"
+  },
+  {
+    "input": "what is gdp",
+    "output": "GDP (Gross Domestic Product) measures a country's economic output — total value of goods and services produced. USA has the world's largest GDP at ~$27 trillion.",
+    "tag": "business"
+  },
+  {
+    "input": "what is a startup",
+    "output": "A startup is a newly founded company aiming to scale rapidly with an innovative product. Funded by venture capital. Famous startups: Apple, Google, Facebook, Uber, Airbnb.",
+    "tag": "business"
+  },
+  {
+    "input": "what is marketing",
+    "output": "Marketing promotes products/services to attract customers. Includes digital marketing (SEO, social media, ads), content marketing, email campaigns, and branding.",
+    "tag": "business"
+  },
+  {
+    "input": "what is entrepreneurship",
+    "output": "Entrepreneurship is starting and running a business, taking financial risks for potential reward. Entrepreneurs identify problems and build solutions — often through startups.",
+    "tag": "business"
+  },
+  {
+    "input": "what is artificial intelligence in business",
+    "output": "AI in business automates repetitive tasks, analyzes data for insights, personalizes customer experiences, detects fraud, and powers chatbots. Transforming every industry.",
+    "tag": "business"
+  },
+  {
+    "input": "what is ecommerce",
+    "output": "Ecommerce is buying and selling goods online. Amazon is the world's largest. Models: B2C (Amazon), B2B (Alibaba), C2C (eBay). Global ecommerce is worth $6+ trillion.",
+    "tag": "business"
+  },
+  {
+    "input": "what is the sahara desert",
+    "output": "The Sahara is the world's largest hot desert — 9.2 million km² across North Africa. Despite its reputation, 25% is sand dunes; the rest is rocky plateaus and mountains.",
+    "tag": "geography"
+  },
+  {
+    "input": "what is the amazon river",
+    "output": "The Amazon River in South America carries more water than any other river — 20% of all fresh water flowing into the world's oceans. Over 3,000 species of fish live in it.",
+    "tag": "geography"
+  },
+  {
+    "input": "what is mount everest",
+    "output": "Mount Everest (8,849 m) is Earth's highest peak above sea level, in the Himalayas on the Nepal-Tibet border. First summited by Edmund Hillary and Tenzing Norgay in 1953.",
+    "tag": "geography"
+  },
+  {
+    "input": "what is the pacific ocean",
+    "output": "The Pacific is Earth's largest and deepest ocean — 165 million km², larger than all land combined. Contains the Mariana Trench (deepest point: 11,034 m).",
+    "tag": "geography"
+  },
+  {
+    "input": "where is india",
+    "output": "India is in South Asia, bordered by Pakistan, China, Nepal, Bhutan, Bangladesh, and Myanmar. Population: 1.4 billion — the world's most populous country since 2023.",
+    "tag": "geography"
+  },
+  {
+    "input": "what is europe",
+    "output": "Europe is the second-smallest continent — 10.5 million km². Has 44 countries. The European Union (27 members) shares currency (Euro) and open borders.",
+    "tag": "geography"
+  },
+  {
+    "input": "what is africa",
+    "output": "Africa is the second-largest continent — 30.3 million km² with 54 countries. Most biodiverse continent. Home to the Sahara, Nile, Congo rainforest, and Serengeti.",
+    "tag": "geography"
+  },
+  {
+    "input": "what is asia",
+    "output": "Asia is the largest and most populous continent — 44.6 million km², 4.7 billion people. Home to the world's two largest economies (China, Japan) and tallest mountains.",
+    "tag": "geography"
+  },
+  {
+    "input": "what is philosophy",
+    "output": "Philosophy is the study of fundamental questions: existence, knowledge, ethics, mind, and language. Major branches: metaphysics, epistemology, ethics, logic, aesthetics.",
+    "tag": "philosophy"
+  },
+  {
+    "input": "what is ethics",
+    "output": "Ethics is the branch of philosophy studying morality — what is right and wrong. Major theories: utilitarianism (greatest good), deontology (rules/duty), virtue ethics (character).",
+    "tag": "philosophy"
+  },
+  {
+    "input": "what is logic",
+    "output": "Logic is the study of valid reasoning and argument. A valid argument: if premises are true, conclusion must be true. Foundation of mathematics and computer science.",
+    "tag": "philosophy"
+  },
+  {
+    "input": "what is consciousness",
+    "output": "Consciousness is awareness of self and surroundings. One of science's biggest mysteries — we don't know how the brain produces subjective experience. Called 'the hard problem'.",
+    "tag": "philosophy"
+  },
+  {
+    "input": "what is critical thinking",
+    "output": "Critical thinking is analyzing information objectively before forming conclusions. Skills: questioning assumptions, evaluating evidence, recognizing bias, logical reasoning.",
+    "tag": "philosophy"
+  },
+  {
+    "input": "what is creativity",
+    "output": "Creativity is generating novel and useful ideas by connecting existing concepts in new ways. Can be developed — techniques: brainstorming, mind mapping, constraints, diverse input.",
+    "tag": "philosophy"
+  },
+  {
+    "input": "what is the largest animal",
+    "output": "The blue whale is the largest animal ever known — up to 33 meters long and 200 tons. Its heart is the size of a small car. Found in all oceans.",
+    "tag": "nature"
+  },
+  {
+    "input": "what is the fastest animal",
+    "output": "The peregrine falcon is the fastest at 389 km/h in a dive. Fastest land animal: cheetah at 112 km/h. Fastest fish: sailfish at 110 km/h.",
+    "tag": "nature"
+  },
+  {
+    "input": "what are mammals",
+    "output": "Mammals are warm-blooded vertebrates that nurse young with milk. ~5,500 species including humans, whales, bats, and elephants. Characterized by hair/fur and three middle ear bones.",
+    "tag": "nature"
+  },
+  {
+    "input": "what are reptiles",
+    "output": "Reptiles are cold-blooded vertebrates with scales. ~10,000 species: snakes, lizards, turtles, crocodilians. Most lay eggs. Descendants of the dinosaurs' lineage.",
+    "tag": "nature"
+  },
+  {
+    "input": "what are insects",
+    "output": "Insects are the most diverse animal group — over 1 million known species (possibly 10 million total). 6 legs, 3 body parts. Bees, ants, beetles, butterflies.",
+    "tag": "nature"
+  },
+  {
+    "input": "what is a coral reef",
+    "output": "Coral reefs are marine ecosystems built by coral polyps — tiny animals with calcium carbonate skeletons. Cover 0.1% of ocean floor but support 25% of all marine species.",
+    "tag": "nature"
+  },
+  {
+    "input": "what are dinosaurs",
+    "output": "Dinosaurs were reptiles that dominated Earth for 165 million years. Went extinct ~66 million years ago when an asteroid hit Earth. Birds are living dinosaurs!",
+    "tag": "nature"
+  },
+  {
+    "input": "what is biodiversity",
+    "output": "Biodiversity is the variety of life on Earth. About 8.7 million species estimated, with only 1.5 million catalogued. Threatened by habitat loss, climate change, and pollution.",
+    "tag": "nature"
+  },
+  {
+    "input": "hello",
+    "output": "Hello! 👋 I'm Aria-mini 1. Ask me anything!",
+    "tag": "greeting"
+  },
+  {
+    "input": "hi",
+    "output": "Hi there! 😊 How can I help you today?",
+    "tag": "greeting"
+  },
+  {
+    "input": "hey",
+    "output": "Hey! What's up? Ask me anything!",
+    "tag": "greeting"
+  },
+  {
+    "input": "good morning",
+    "output": "Good morning! ☀️ How can I help you?",
+    "tag": "greeting"
+  },
+  {
+    "input": "good night",
+    "output": "Good night! 🌙 Sleep well!",
+    "tag": "greeting"
+  },
+  {
+    "input": "how are you",
+    "output": "I'm Aria-mini 1 — always ready to help! 🚀 What do you want to know?",
+    "tag": "greeting"
+  },
+  {
+    "input": "who are you",
+    "output": "I'm Aria-mini 1, a lightweight AI model built from scratch by Hriday! 🤖",
+    "tag": "greeting"
+  },
+  {
+    "input": "what are you",
+    "output": "I'm Aria-mini 1 — a small but powerful AI assistant built with a custom Transformer architecture!",
+    "tag": "greeting"
+  },
+  {
+    "input": "what can you do",
+    "output": "I can answer questions about science, tech, history, math, space, health, and more! Try asking me anything 😊",
+    "tag": "greeting"
+  },
+  {
+    "input": "what is gravity",
+    "output": "Gravity is a fundamental force that attracts objects with mass toward each other. Earth's gravity pulls at 9.8 m/s². Described by Newton's law and Einstein's general relativity.",
+    "tag": "science"
+  },
+  {
+    "input": "tell me about gravity",
+    "output": "Gravity is the force pulling objects together. The stronger an object's mass, the stronger its gravity. Earth's gravity keeps us grounded and the Moon in orbit.",
+    "tag": "science"
+  },
+  {
+    "input": "what is dna",
+    "output": "DNA (Deoxyribonucleic Acid) is the molecule carrying genetic instructions for all living things. It's a double helix made of 4 bases: A, T, C, G. Every cell in your body has 3 billion base pairs!",
+    "tag": "science"
+  },
+  {
+    "input": "what is machine learning",
+    "output": "Machine learning is AI that learns from data without being explicitly programmed. Types: supervised (labeled data), unsupervised (finds patterns), reinforcement (learns by reward).",
+    "tag": "tech"
+  },
+  {
+    "input": "explain machine learning",
+    "output": "Machine learning trains models on data to make predictions. Example: show 1000 cat photos → model learns to recognize cats. Used in spam filters, recommendations, self-driving cars.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is deep learning",
+    "output": "Deep learning uses neural networks with many layers to learn complex patterns. Powers image recognition, speech, and large language models like GPT and Claude.",
+    "tag": "tech"
+  },
+  {
+    "input": "what is neural network",
+    "output": "A neural network is a system inspired by the human brain — layers of nodes (neurons) that process and transform data. More layers = deeper network = can learn more complex patterns.",
+    "tag": "tech"
+  },
+  {
+    "input": "tell me a joke",
+    "output": "Why do programmers prefer dark mode? Because light attracts bugs! 🐛😄",
+    "tag": "fun"
+  },
+  {
+    "input": "joke",
+    "output": "Why did the programmer quit? Because they didn't get arrays! 😂",
+    "tag": "fun"
+  },
+  {
+    "input": "tell me something funny",
+    "output": "A SQL query walks into a bar, walks up to two tables and asks: 'Can I join you?' 😄",
+    "tag": "fun"
+  },
+  {
+    "input": "make me laugh",
+    "output": "There are 10 types of people in the world: those who understand binary, and those who don't! 😂",
+    "tag": "fun"
+  },
+  {
+    "input": "how to make tea",
+    "output": "1. Boil water (100°C for black tea, 80°C for green tea). 2. Add tea bag or leaves. 3. Steep 3-5 minutes. 4. Add milk/sugar to taste. Enjoy! ☕",
+    "tag": "food"
+  },
+  {
+    "input": "how to make coffee",
+    "output": "1. Boil water. 2. Add 1-2 tbsp ground coffee per cup. 3. Pour over filter or use French press. 4. Steep 4 minutes. 5. Add milk/sugar if desired. ☕",
+    "tag": "food"
+  },
+  {
+    "input": "what is python programming",
+    "output": "Python is a high-level programming language known for its simple, readable syntax. Created by Guido van Rossum in 1991. Used for AI, web dev, automation, data science. Most popular language worldwide.",
+    "tag": "tech"
+  },
+  {
+    "input": "python programming language",
+    "output": "Python is beginner-friendly and powerful. Key features: dynamic typing, indentation-based syntax, huge library ecosystem (NumPy, TensorFlow, Django, Flask). Runs on all platforms.",
+    "tag": "tech"
+  },
+  {
+    "input": "bye",
+    "output": "Goodbye! 👋 Come back anytime!",
+    "tag": "greeting"
+  },
+  {
+    "input": "goodbye",
+    "output": "See you later! 😊",
+    "tag": "greeting"
+  },
+  {
+    "input": "thanks",
+    "output": "You're welcome! 😊 Anything else I can help with?",
+    "tag": "greeting"
+  },
+  {
+    "input": "thank you",
+    "output": "Happy to help! 🙌 Ask me anything anytime.",
+    "tag": "greeting"
+  }
+]

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050508;--card:#0e0e14;--border:rgba(255,255,255,.06);--p:#7c6aff;--p2:#a78bfa;--green:#10d9a0;--red:#ff4d6d;--text:#e4e4f0;--muted:rgba(228,228,240,.35)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overflow:hidden;font-family:'Space Grotesk',sans-serif}
+body{background:var(--bg);color:var(--text);display:flex;flex-direction:column}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(ellipse 60% 40% at 20% 0%,rgba(124,106,255,.07) 0%,transparent 70%),
+             radial-gradient(ellipse 40% 30% at 80% 100%,rgba(167,139,250,.05) 0%,transparent 70%)}
+
+/* Header */
+.hdr{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;
+  border-bottom:1px solid var(--border);background:rgba(5,5,8,.85);
+  backdrop-filter:blur(16px);flex-shrink:0;position:relative;z-index:10}
+.hdr-left{display:flex;align-items:center;gap:12px}
+.brain-icon{width:36px;height:36px;border-radius:12px;
+  background:linear-gradient(135deg,var(--p),var(--p2));
+  display:flex;align-items:center;justify-content:center;font-size:18px;
+  box-shadow:0 0 20px rgba(124,106,255,.3)}
+.ai-name{font-size:18px;font-weight:700;letter-spacing:-.3px}
+.ai-sub{font-size:10px;color:var(--muted);font-family:'Space Mono',monospace;letter-spacing:.5px}
+.hdr-right{display:flex;align-items:center;gap:8px}
+.stat-chip{padding:5px 11px;border-radius:99px;font-size:11px;font-weight:700;
+  font-family:'Space Mono',monospace;letter-spacing:.3px}
+.stat-chip.patterns{background:rgba(124,106,255,.1);border:1px solid rgba(124,106,255,.2);color:var(--p2)}
+.stat-chip.online{background:rgba(16,217,160,.08);border:1px solid rgba(16,217,160,.15);color:var(--green)}
+.stat-chip.offline{background:rgba(255,77,109,.08);border:1px solid rgba(255,77,109,.15);color:var(--red)}
+.hdr-btn{padding:7px 13px;border-radius:9px;border:1px solid var(--border);
+  background:rgba(255,255,255,.04);color:var(--muted);font-family:'Space Grotesk',sans-serif;
+  font-size:12px;font-weight:700;cursor:pointer;transition:all .2s}
+.hdr-btn:hover{background:rgba(255,255,255,.08);color:var(--text)}
+
+/* Messages */
+.msgs{flex:1;overflow-y:auto;padding:20px 16px;display:flex;flex-direction:column;
+  gap:14px;position:relative;z-index:1}
+.msgs::-webkit-scrollbar{width:3px}
+.msgs::-webkit-scrollbar-thumb{background:rgba(255,255,255,.06);border-radius:2px}
+
+/* Empty */
+.empty{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:30px}
+.empty-brain{font-size:52px;margin-bottom:16px;filter:drop-shadow(0 0 20px rgba(124,106,255,.4))}
+.empty-title{font-size:22px;font-weight:700;margin-bottom:8px;letter-spacing:-.3px}
+.empty-sub{font-size:13px;color:var(--muted);max-width:280px;line-height:1.7;margin-bottom:20px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.chip{padding:8px 14px;border-radius:99px;border:1px solid var(--border);
+  background:rgba(255,255,255,.03);font-size:12px;color:var(--muted);
+  cursor:pointer;transition:all .2s;font-weight:500}
+.chip:hover{border-color:rgba(124,106,255,.4);color:var(--p2);background:rgba(124,106,255,.08)}
+
+/* Messages */
+.msg{display:flex;gap:10px;animation:up .22s ease}
+@keyframes up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.msg.user{flex-direction:row-reverse}
+.avatar{width:32px;height:32px;border-radius:10px;flex-shrink:0;display:flex;
+  align-items:center;justify-content:center;font-size:15px}
+.msg.ai .avatar{background:linear-gradient(135deg,rgba(124,106,255,.2),rgba(167,139,250,.15));
+  border:1px solid rgba(124,106,255,.2)}
+.msg.user .avatar{background:linear-gradient(135deg,#5b4ccc,#7c6aff);color:#fff}
+.msg-body{max-width:min(78%,520px)}
+.msg-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;
+  color:var(--muted);margin-bottom:5px;font-family:'Space Mono',monospace}
+.msg.user .msg-label{text-align:right}
+.bubble{padding:12px 15px;border-radius:16px;font-size:14px;line-height:1.7;
+  word-break:break-word;white-space:pre-wrap}
+.msg.ai .bubble{background:var(--card);border:1px solid var(--border);
+  border-radius:4px 16px 16px 16px}
+.msg.user .bubble{background:linear-gradient(135deg,#4338ca,#6d28d9);
+  color:#fff;border-radius:16px 4px 16px 16px}
+.bubble pre{background:#000;border:1px solid rgba(124,106,255,.2);border-radius:8px;
+  padding:12px;overflow-x:auto;font-family:'Space Mono',monospace;
+  font-size:12px;line-height:1.7;color:#c9d1d9;white-space:pre;margin-top:6px}
+.copy-btn{display:inline-block;margin-top:5px;padding:3px 9px;border-radius:5px;
+  background:rgba(124,106,255,.1);border:1px solid rgba(124,106,255,.2);
+  color:var(--p2);font-size:10px;font-weight:700;cursor:pointer;font-family:'Space Mono',monospace}
+
+/* Meta row */
+.meta{font-size:10px;color:var(--muted);margin-top:5px;display:flex;align-items:center;gap:6px;
+  font-family:'Space Mono',monospace}
+.msg.user .meta{justify-content:flex-end}
+.conf-bar{height:3px;border-radius:2px;min-width:30px;max-width:60px;margin-top:3px}
+.source-chip{display:inline-flex;align-items:center;gap:4px;padding:3px 9px;
+  border-radius:99px;background:rgba(124,106,255,.08);border:1px solid rgba(124,106,255,.15);
+  color:var(--p2);font-size:10px;font-weight:700;cursor:pointer;text-decoration:none;
+  font-family:'Space Mono',monospace;margin-top:6px;transition:all .2s}
+.source-chip:hover{background:rgba(124,106,255,.15)}
+
+/* Typing */
+.typing-dots{display:flex;gap:5px;align-items:center;padding:14px 15px}
+.typing-dots span{width:6px;height:6px;border-radius:50%;background:var(--muted);
+  animation:dot .8s ease-in-out infinite}
+.typing-dots span:nth-child(2){animation-delay:.15s}
+.typing-dots span:nth-child(3){animation-delay:.3s}
+@keyframes dot{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-6px)}}
+
+/* Input */
+.input-area{padding:14px 16px;flex-shrink:0;border-top:1px solid var(--border);
+  background:rgba(5,5,8,.85);backdrop-filter:blur(16px);position:relative;z-index:10}
+.input-wrap{display:flex;gap:10px;align-items:flex-end;background:var(--card);
+  border:1px solid var(--border);border-radius:16px;padding:10px 10px 10px 15px;transition:border .2s}
+.input-wrap:focus-within{border-color:rgba(124,106,255,.4)}
+#inp{flex:1;background:none;border:none;outline:none;color:var(--text);
+  font-family:'Space Grotesk',sans-serif;font-size:14px;resize:none;
+  max-height:120px;line-height:1.5}
+#inp::placeholder{color:var(--muted)}
+.send{width:38px;height:38px;border-radius:11px;border:none;flex-shrink:0;
+  background:linear-gradient(135deg,var(--p),var(--p2));color:#fff;
+  font-size:17px;cursor:pointer;display:flex;align-items:center;justify-content:center;
+  transition:opacity .2s;box-shadow:0 2px 12px rgba(124,106,255,.35)}
+.send:hover{opacity:.85}
+.send:disabled{opacity:.3;cursor:not-allowed}
+.hints{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
+.hint{font-size:11px;color:var(--muted);background:rgba(255,255,255,.03);
+  border:1px solid var(--border);border-radius:6px;padding:3px 8px;
+  font-family:'Space Mono',monospace}
+</style>
+</head>
+<body>
+
+<div class="hdr">
+  <div class="hdr-left">
+    <div class="brain-icon">🧠</div>
+    <div>
+      <div class="ai-name">TinyAI</div>
+      <div class="ai-sub">NEURAL · LOCAL · FAST</div>
+    </div>
+  </div>
+  <div class="hdr-right">
+    <div class="stat-chip patterns" id="pchip">⚙ loading</div>
+    <div class="stat-chip offline" id="schip">○ offline</div>
+    <button class="hdr-btn" onclick="clearChat()">🗑</button>
+  </div>
+</div>
+
+<div class="msgs" id="msgs">
+  <div class="empty" id="empty">
+    <div class="empty-brain">🧠</div>
+    <div class="empty-title">TinyAI is ready</div>
+    <div class="empty-sub">A real neural network running locally. Ask me anything or teach me something new.</div>
+    <div class="chips">
+      <div class="chip" onclick="send('What is machine learning?')">What is ML?</div>
+      <div class="chip" onclick="send('Tell me a joke')">Tell me a joke</div>
+      <div class="chip" onclick="send('What is the speed of light?')">Speed of light</div>
+      <div class="chip" onclick="send('Calculate 128 * 256')">128 × 256</div>
+      <div class="chip" onclick="send('What is Python?')">What is Python?</div>
+    </div>
+  </div>
+</div>
+
+<div class="input-area">
+  <div class="input-wrap">
+    <textarea id="inp" rows="1" placeholder="Ask anything or say 'remember that X is Y'…"
+      onkeydown="handleKey(event)" oninput="resize(this)"></textarea>
+    <button class="send" id="sbtn" onclick="sendMsg()">↑</button>
+  </div>
+  <div class="hints">
+    <span class="hint">💡 remember that X is Y</span>
+    <span class="hint">🔢 math: 25 * 48</span>
+    <span class="hint">🧹 clear memory</span>
+  </div>
+</div>
+
+<script>
+const SID = 'sid_' + Math.random().toString(36).slice(2,9);
+
+async function checkStatus() {
+  try {
+    const d = await (await fetch('/api/status')).json();
+    document.getElementById('pchip').textContent = `⚙ ${d.patterns} patterns`;
+    document.getElementById('schip').textContent = d.trained ? '● online' : '○ training';
+    document.getElementById('schip').className = 'stat-chip ' + (d.trained ? 'online' : 'offline');
+  } catch {
+    document.getElementById('schip').textContent = '○ offline';
+    document.getElementById('schip').className = 'stat-chip offline';
+  }
+}
+checkStatus(); setInterval(checkStatus, 8000);
+
+async function sendMsg() {
+  const inp  = document.getElementById('inp');
+  const text = inp.value.trim();
+  if (!text) return;
+  inp.value = ''; resize(inp);
+  document.getElementById('sbtn').disabled = true;
+  document.getElementById('empty')?.remove();
+  addMsg('user', text);
+  const typing = addTyping();
+  try {
+    const res  = await fetch('/api/chat', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({message: text, session_id: SID})
+    });
+    const d = await res.json();
+    typing.remove();
+    if (d.error) { addMsg('ai', '❌ ' + d.error); }
+    else { addMsg('ai', d.reply, d.confidence, d.tag, d.web ? d.source : null); }
+    if (d.tag === 'learned') checkStatus();
+  } catch {
+    typing.remove();
+    addMsg('ai', '❌ Cannot reach server. Run: python app.py');
+  }
+  document.getElementById('sbtn').disabled = false;
+  inp.focus();
+}
+
+function send(t) { document.getElementById('inp').value = t; sendMsg(); }
+
+function confColor(c) {
+  if (c >= 0.7) return '#10d9a0';
+  if (c >= 0.4) return '#f59e0b';
+  return '#ff4d6d';
+}
+
+function addMsg(role, text, confidence=null, tag=null, source=null) {
+  const msgs = document.getElementById('msgs');
+  const now  = new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});
+  const isAI = role === 'ai';
+  const w    = document.createElement('div');
+  w.className = 'msg ' + role;
+
+  // Code detection
+  let bodyHtml;
+  if (text.includes('\n') && (text.includes('    ') || text.match(/[{}();:]/))) {
+    const id = 'c' + Math.random().toString(36).slice(2);
+    bodyHtml = `<pre id="${id}">${esc(text)}</pre><span class="copy-btn" onclick="copyCode('${id}')">📋 copy</span>`;
+  } else {
+    bodyHtml = esc(text);
+  }
+
+  // Confidence bar
+  let confHtml = '';
+  if (isAI && confidence !== null && confidence < 1.0) {
+    const pct = Math.round(confidence * 100);
+    const col = confColor(confidence);
+    confHtml = `<div class="conf-bar" style="width:${Math.max(pct,10)}px;background:${col}22;border:1px solid ${col}44" title="Confidence: ${pct}%"></div>`;
+  }
+
+  // Source chip
+  let srcHtml = '';
+  if (source) {
+    const parts = source.split('||');
+    const name  = parts[0].trim();
+    const url   = parts[1] ? parts[1].trim() : '';
+    srcHtml = url
+      ? `<br><a class="source-chip" href="${url}" target="_blank">🌐 ${esc(name)}</a>`
+      : `<br><span class="source-chip">🌐 ${esc(name)}</span>`;
+  }
+
+  w.innerHTML = `
+    <div class="avatar">${isAI ? '🧠' : '🧑'}</div>
+    <div class="msg-body">
+      <div class="msg-label">${isAI ? 'TinyAI' : 'You'}</div>
+      <div class="bubble">${bodyHtml}</div>
+      <div class="meta">
+        ${now}
+        ${tag && isAI ? `· <span style="opacity:.5">${tag}</span>` : ''}
+      </div>
+      ${confHtml}
+      ${srcHtml}
+    </div>`;
+  msgs.appendChild(w);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function addTyping() {
+  const msgs = document.getElementById('msgs');
+  const w = document.createElement('div');
+  w.className = 'msg ai';
+  w.innerHTML = `<div class="avatar">🧠</div><div class="msg-body"><div class="msg-label">TinyAI</div><div class="bubble"><div class="typing-dots"><span></span><span></span><span></span></div></div></div>`;
+  msgs.appendChild(w); msgs.scrollTop = msgs.scrollHeight;
+  return w;
+}
+
+async function clearChat() {
+  await fetch('/api/chat', {method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({message:'clear memory',session_id:SID})});
+  document.getElementById('msgs').innerHTML = `<div class="empty" id="empty">
+    <div class="empty-brain">🧠</div>
+    <div class="empty-title">Fresh start!</div>
+    <div class="empty-sub">Memory cleared. Ask me anything.</div>
+    <div class="chips">
+      <div class="chip" onclick="send('What is AI?')">What is AI?</div>
+      <div class="chip" onclick="send('Tell me a joke')">Tell me a joke</div>
+    </div></div>`;
+}
+
+function copyCode(id) {
+  const pre = document.getElementById(id);
+  navigator.clipboard.writeText(pre.textContent).then(() => {
+    const btn = pre.nextElementSibling;
+    btn.textContent = '✅ copied!';
+    setTimeout(() => btn.textContent = '📋 copy', 2000);
+  });
+}
+
+function handleKey(e) { if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendMsg();} }
+function resize(el) { el.style.height='auto'; el.style.height=Math.min(el.scrollHeight,120)+'px'; }
+function esc(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>');
+}
+</script>
+</body>
+</html>
